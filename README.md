@@ -14,10 +14,10 @@ The app features a Chat functionality where a registered user can chat with any 
 
 For storing user information and all other data, ```Google Firebase``` cloud database is used.
 
-# Usage
+## Usage
 
 To run the application, simply copy paste the given code and all the resources in Android Studio or import the project and simply deploy.
 
-# Contribution
+## Contribution
 
 This project was coded by [Rahul Maheshwari](https://www.linkedin.com/in/rahul-maheshwari-597bb2b6/) and [Srishti Srivastava](https://www.linkedin.com/in/srishti-srivastava-912643140/). The project design was done by [Rishabh Patel](https://www.linkedin.com/in/rishabh-patel-b56088172/).
