@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    >
+<RelativeLayout
+    android:background=" #dff5ff"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+        android:id="@+id/profile_photo"
+    android:layout_height="50dp"
+    android:src="@drawable/profile_icon"
+    />
+    <TextView
+            android:id="@+id/name_of_user"
+        android:layout_toRightOf="@+id/profile_photo"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="25dp"
+            android:text="Srishti Srivastava"
+        />
+    <TextView
+        android:id="@+id/enrollment_no"
+        android:layout_below="@+id/name_of_user"
+        android:layout_toRightOf="@+id/profile_photo"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_height="wrap_content"
+        android:text="0876CS141100"/>
+
+    <ImageView
+        android:id="@+id/message_arrived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_star"
+        />
+    </RelativeLayout>
+</LinearLayout>

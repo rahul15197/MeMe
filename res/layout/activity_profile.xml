@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/linearlayout_profile"
+    android:layout_height="match_parent"
+    android:background="@drawable/meme_back"
+    android:orientation="vertical"
+    tools:context="com.example.android.meme.Profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_a_photo_white_24dp"
+            android:id="@+id/choose_image"
+            android:layout_gravity="bottom"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            android:src="@drawable/profile_icon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file_upload_white_24dp"
+            android:id="@+id/upload_image"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bubblegum_sans"
+        android:padding="10dp"
+        tools:text="John/Jane"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_progress"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:isScrollContainer="true"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="E-mail"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="someone@gmail.com"
+                android:textSize="25dp"
+                android:textColor="#005C6F"
+                android:textAlignment="center"
+                android:id="@+id/profile_email_text"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:paddingTop="12dp"
+                android:id="@+id/profile_college"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="your college"
+                android:textSize="25dp"
+                android:textColor="#005C6F"
+                android:textAlignment="center"
+                android:id="@+id/profile_college_text"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:paddingTop="12dp"
+                android:id="@+id/profile_id"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0876cs14xxxx"
+                android:textSize="25dp"
+                android:textColor="#005C6F"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:id="@+id/profile_id_text"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batch"
+                android:paddingTop="12dp"
+                android:id="@+id/profile_batch"
+                android:textAlignment="center"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="20xx"
+                android:textSize="25dp"
+                android:textColor="#005C6F"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:id="@+id/profile_batch_text"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonlinear">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset Password"
+                    style="@style/Button_Style"
+                    android:textColor="#005C6F"
+                    android:layout_weight=".5"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/profile_reset"
+                    android:background="@drawable/rounded_edittext_colored"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    style="@style/Button_Style"
+                    android:textColor="#005C6F"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/profile_logout"
+                    android:background="@drawable/rounded_edittext_colored"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
