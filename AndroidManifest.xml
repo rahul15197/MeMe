@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.meme">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/meme_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Main"
+            />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".NoticeBoard"
+            android:label="@string/title_activity_notice_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPassword"
+            android:label="Forgot Password"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".EditNoticeBoard"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".EditPassword"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Event"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Department"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Batch"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Student"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Faculty"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Placement"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".CS"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".IT"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".EE"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".EC"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".EI"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".FT"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".ME"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".AE"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".CE"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Nano"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".MCA"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Phd"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".BCA"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Bsc"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".Bcom"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".MBA"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".BB"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".DeletePostClass"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".FourthYear"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".ThirdYear"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".SecondYear"
+            android:theme="@style/Rahul" />
+        <activity
+            android:name=".FirstYear"
+            android:theme="@style/Rahul" />
+
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ReceiverProfile"
+            android:theme="@style/Main" />
+        <activity
+            android:name=".About_Us"
+            android:theme="@style/about" />
+        <activity android:name=".Important"
+            android:theme="@style/Rahul"></activity>
+    </application>
+
+</manifest>
